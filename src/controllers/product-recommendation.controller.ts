@@ -1,9 +1,8 @@
 import { NextFunction, Request, Response, Router } from "express";
 import _ from "lodash";
+import { ProductModel } from "../repositories";
 
 export class ProductRecommendationController {
-  public path = "/product-recommendation";
-
   public router: Router;
   public static instance: ProductRecommendationController;
 
@@ -23,7 +22,15 @@ export class ProductRecommendationController {
     res.json({ message: "test" });
   }
 
+  public getRecommendation = async (req: Request, res: Response, next: NextFunction) => {
+    const productId = req.params.productId ;
+    const recommendations = await ProductModel.getRecommendationByProductId(productId);
+    res.json({ recommendations });
+  }
+
+
   public routes() {
     this.router.get("/test", this.index); // for testing only
+    this.router.get("/:productId/recommendations", this.getRecommendation); // for testing only
   }
 }

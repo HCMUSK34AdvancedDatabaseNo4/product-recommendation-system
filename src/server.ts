@@ -21,7 +21,7 @@ app.get("/", async (req, res) => {
 });
 
 
-app.use("/api/product-recommendation", ProductRecommendationController.getInstance().router)
+app.use("/api/products", ProductRecommendationController.getInstance().router)
 
 // Start Server
 app.listen(PORT, () => {
