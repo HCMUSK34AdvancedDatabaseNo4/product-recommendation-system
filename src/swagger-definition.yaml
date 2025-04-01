@@ -1,0 +1,92 @@
+openapi: 3.0.0
+info:
+  title: Product Recommendation API
+  version: 1.0.0
+  description: APIs for recommending products based on users and products
+servers:
+  - url: http://localhost:3000
+
+paths:
+  /api/recommendations/product/{productId}:
+    get:
+      summary: Get product recommendations by product ID
+      parameters:
+        - in: path
+          name: productId
+          required: true
+          description: The ID of the product
+          schema:
+            type: string
+      responses:
+        200:
+          description: A list of recommended products for the user
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  recommendations:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Product'
+                  message:
+                    type: string
+                    example: "Successfully"
+                  code:
+                    type: number
+                    example: 200
+        400:
+          description: Bad request, invalid product ID
+        404:
+          description: Product not found
+
+  /api/recommendations/user/{userId}:
+    get:
+      summary: Get product recommendations by user ID
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          description: The ID of the user
+          schema:
+            type: string
+      responses:
+        200:
+          description: A list of recommended products for the user
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  recommendations:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Product'
+                  message:
+                    type: string
+                    example: "Successfully"
+                  code:
+                    type: number
+                    example: 200
+        400:
+          description: Bad request, invalid user ID
+        404:
+          description: User not found
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "P001"
+        name:
+          type: string
+          example: "MacBook Pro"
+        description:
+          type: string
+          example: "A high-performance laptop"
+        price:
+          type: number
+          example: 2000
