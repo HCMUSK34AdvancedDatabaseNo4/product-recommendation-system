@@ -1,6 +1,8 @@
 import { NextFunction, Request, Response, Router } from "express";
 import _ from "lodash";
-import { ProductModel } from "../repositories";
+import { ProductRepository } from "../repositories";
+import { APIRequest } from "../helpers";
+import { BadRequestError } from "../helpers/error-handler";
 
 export class ProductRecommendationController {
   public router: Router;
@@ -22,15 +24,30 @@ export class ProductRecommendationController {
     res.json({ message: "test" });
   }
 
-  public getRecommendation = async (req: Request, res: Response, next: NextFunction) => {
-    const productId = req.params.productId ;
-    const recommendations = await ProductModel.getRecommendationByProductId(productId);
-    res.json({ recommendations });
-  }
+  public getRecommendation = APIRequest(async (req: Request, res: Response, next: NextFunction) => {
+    const productId = req.params.productId;
+    if (!productId) {
+      throw new BadRequestError("Product ID is required");
+    }
+    const recommendations = await ProductRepository.getRecommendationByProductId(productId);
+    return { recommendations }
+  })
+
+  public getRecommendationByUserId = APIRequest(async (req: Request, res: Response, next: NextFunction) => {
+    const userId = req.params.userId;
+    if (!userId) {
+      throw new BadRequestError("User ID is required");
+    }
+    if (isNaN(parseInt(userId))) {
+      throw new BadRequestError("User ID must be a number");
+    }
+    const recommendations = await ProductRepository.getRecommendationByUserId(parseInt(userId));
+    return { recommendations }
+  })
 
 
   public routes() {
-    this.router.get("/test", this.index); // for testing only
-    this.router.get("/:productId/recommendations", this.getRecommendation); // for testing only
+    this.router.get("/product/:productId", this.getRecommendation);
+    this.router.get("/user/:userId", this.getRecommendationByUserId);
   }
 }

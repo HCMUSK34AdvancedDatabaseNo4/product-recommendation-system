@@ -13,7 +13,7 @@ interface LoggerConfig {
   compress: boolean;
 }
 
-export function configure(
+export function configureLogger(
   config: LoggerConfig = {
     filename: `${process.env.LOG4JS_DIR}/${process.env.LOG4JS_FILENAME}`,
     maxLogSize: Number(process.env.LOG4JS_MAX_LOG_SIZE) || 10485760,

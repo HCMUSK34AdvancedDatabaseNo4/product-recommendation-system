@@ -3,6 +3,8 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import { ProductRecommendationController } from "./controllers/";
+import { configureLogger } from "./helpers/logger-config";
+import { errorHanlder } from "./helpers/error-handler";
 
 dotenv.config();
 
@@ -19,10 +21,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get("/", async (req, res) => {
   res.send("Hello World!");
 });
+configureLogger()
 
-
-app.use("/api/products", ProductRecommendationController.getInstance().router)
-
+app.use("/api/recommendations", ProductRecommendationController.getInstance().router)
+app.use(errorHanlder);
 // Start Server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);

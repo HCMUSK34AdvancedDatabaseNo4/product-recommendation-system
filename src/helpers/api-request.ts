@@ -8,11 +8,12 @@ const logger = getLogger("api-request");
 export const APIRequest = (fn: Function) => {
   return async (req: Request, res: Response, next: NextFunction) => {
     logger.info(
-      `METHOD: ${req.method}, PATH: ${
-        req.baseUrl + req.path
-      }, PARAMS: ${JSON.stringify(req.params)}, QUERY: ${JSON.stringify(
-        req.query
-      )}`
+      {
+        "method": req.method,
+        "path":   req.baseUrl + req.path,
+        "params":  req.params,
+        "query": req.query,
+      }
     );
     try {
       const result = await fn(req, res, next);

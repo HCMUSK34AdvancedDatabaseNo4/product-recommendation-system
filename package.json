@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx ts-node src/server.ts",
-    "import-data": "npx ts-node import-data.ts"
+    "import": "npx ts-node import-data.ts"
   },
   "keywords": [],
   "author": "",
