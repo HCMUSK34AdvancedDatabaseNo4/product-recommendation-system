@@ -2,14 +2,21 @@
   "name": "product-recommendation",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node src/server.ts",
-    "import": "npx ts-node import-data.ts"
+    "build": "npx tsc",
+    "start": "npx tsc && node .",
+    "import": "npx ts-node src/import-data.ts"
   },
   "keywords": [],
   "author": "",
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
   "license": "ISC",
   "dependencies": {
     "@types/lodash": "^4.17.16",
