@@ -30,7 +30,7 @@ async function importData() {
         for (const product of data.products) {
         await session.run(
             `MERGE (p:Product {product_id: $product_id})
-                SET p.name = $name, p.brand = $brand, p.price = $price`,
+                SET p.name = $name, p.description = $description, p.price = $price`,
             product
         );
 
@@ -74,24 +74,6 @@ async function importData() {
             );
         }
     }
-
-    // Import Supplier Relationships
-    for (const supply of data.suppliers) {
-        for (const productId of supply.products) {
-            await session.run(
-                `MATCH (s:User {user_id: $user_id}), (p:Product {product_id: $product_id})
-                        MERGE (s)-[:SUPPLIES]->(p)`,
-                {
-                    user_id: supply.user_id,
-                    product_id: productId
-                }
-            );
-        }
-
-    }
-
-
-
     console.log('Data import complete!');
 } catch (error) {
     console.error('Error importing data:', error);

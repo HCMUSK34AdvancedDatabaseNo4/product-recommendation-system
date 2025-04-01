@@ -20,7 +20,14 @@
     { "category_id": "C011", "name": "Clothes" },
     { "category_id": "C012", "name": "Cosmetics" },
     { "category_id": "C013", "name": "Perfume" },
-    { "category_id": "C014", "name": "Grocery" }
+    { "category_id": "C014", "name": "Grocery" },
+    { "category_id": "C015", "name": "Electronics" },
+    { "category_id": "C016", "name": "Fashion" },
+    { "category_id": "C017", "name": "Books" },
+    { "category_id": "C018", "name": "Sports" },
+    { "category_id": "C019", "name": "Toys" },
+    { "category_id": "C023", "name": "Footwear" },
+    { "category_id": "C024", "name": "Health And Beauty" }
   ],
   "products": [
     {
@@ -28,308 +35,336 @@
       "name": "MacBook Pro",
       "description": "Apple's latest MacBook Pro with M1 chip.",
       "price": 2000,
-      "category_ids": ["C001"]
+      "category_ids": ["C015", "C001"]
     },
     {
       "product_id": "P002",
       "name": "Dell XPS 15",
       "description": "Dell's premium laptop with a stunning display.",
       "price": 1800,
-      "category_ids": ["C001"]
+      "category_ids": ["C015", "C001"]
     },
     {
       "product_id": "P003",
       "name": "Asus ROG Strix",
       "description": "Gaming laptop with high performance.",
       "price": 2200,
-      "category_ids": ["C001"]
+      "category_ids": ["C015", "C001"]
     },
     {
       "product_id": "P004",
       "name": "HP Spectre x360",
       "description": "Convertible laptop with a sleek design.",
       "price": 1700,
-      "category_ids": ["C001"]
+      "category_ids": ["C015", "C001"]
     },
     {
       "product_id": "P005",
       "name": "iPhone 14",
       "description": "Apple's latest smartphone with advanced features.",
       "price": 1200,
-      "category_ids": ["C002"]
+      "category_ids": ["C015", "C002"]
     },
     {
       "product_id": "P006",
       "name": "Samsung Galaxy S23",
       "description": "Samsung's flagship smartphone with a stunning display.",
       "price": 1100,
-      "category_ids": ["C002"]
+      "category_ids": ["C015", "C002"]
     },
     {
       "product_id": "P007",
       "name": "Google Pixel 7",
       "description": "Google's latest smartphone with a great camera.",
       "price": 900,
-      "category_ids": ["C002"]
+      "category_ids": ["C015", "C002"]
     },
     {
       "product_id": "P008",
       "name": "OnePlus 11",
       "description": "OnePlus's latest smartphone with fast charging.",
       "price": 950,
-      "category_ids": ["C002"]
+      "category_ids": ["C015", "C002"]
     },
     {
       "product_id": "P009",
       "name": "Sony WH-1000XM5",
       "description": "Noise-cancelling headphones with great sound quality.",
       "price": 400,
-      "category_ids": ["C003"]
+      "category_ids": ["C015", "C003"]
     },
     {
       "product_id": "P010",
       "name": "Bose QuietComfort 45",
       "description": "Comfortable headphones with excellent noise cancellation.",
       "price": 350,
-      "category_ids": ["C003"]
+      "category_ids": ["C015", "C003"]
     },
     {
       "product_id": "P011",
       "name": "AirPods Pro",
       "description": "Apple's wireless earbuds with active noise cancellation.",
       "price": 250,
-      "category_ids": ["C003"]
+      "category_ids": ["C015", "C003"]
     },
     {
       "product_id": "P012",
       "name": "Nike Air Hoodie",
       "description": "Comfortable hoodie for sports and casual wear.",
       "price": 80,
-      "category_ids": ["C011"]
+      "category_ids": ["C016", "C011"]
     },
     {
       "product_id": "P013",
       "name": "Adidas Ultraboost T-Shirt",
       "description": "Breathable t-shirt for running and workouts.",
       "price": 40,
-      "category_ids": ["C011"]
+      "category_ids": ["C016", "C018", "C011"]
     },
     {
       "product_id": "P014",
       "name": "Levi's 501 Jeans",
       "description": "Classic jeans with a timeless design.",
       "price": 60,
-      "category_ids": ["C011"]
+      "category_ids": ["C016", "C011"]
     },
     {
       "product_id": "P015",
       "name": "North Face Winter Jacket",
       "description": "Warm jacket for cold weather.",
       "price": 150,
-      "category_ids": ["C011"]
+      "category_ids": ["C016", "C011"]
     },
     {
       "product_id": "P016",
       "name": "Puma Running Shorts",
       "description": "Lightweight shorts for running and workouts.",
       "price": 35,
-      "category_ids": ["C011"]
+      "category_ids": ["C016", "C018", "C011"]
     },
     {
       "product_id": "P017",
       "name": "Under Armour Compression Shirt",
       "description": "Compression shirt for sports and workouts.",
       "price": 45,
-      "category_ids": ["C011"]
+      "category_ids": ["C016", "C011"]
     },
     {
       "product_id": "P018",
       "name": "Gucci Leather Belt",
       "description": "Luxury leather belt with a classic design.",
       "price": 250,
-      "category_ids": ["C011"]
+      "category_ids": ["C016", "C011"]
     },
     {
       "product_id": "P019",
       "name": "H&M Cotton Sweatpants",
       "description": "Comfortable sweatpants for casual wear.",
       "price": 30,
-      "category_ids": ["C011"]
+      "category_ids": ["C016", "C011"]
     },
     {
       "product_id": "P020",
       "name": "L'Oreal Revitalift Cream",
       "description": "Anti-aging cream with hyaluronic acid.",
       "price": 30,
-      "category_ids": ["C012"]
+      "category_ids": ["C024", "C012"]
     },
     {
       "product_id": "P021",
       "name": "MAC Matte Lipstick",
       "description": "Long-lasting matte lipstick in various shades.",
       "price": 25,
-      "category_ids": ["C012"]
+      "category_ids": ["C024", "C012"]
     },
     {
       "product_id": "P022",
       "name": "Maybelline Fit Me Foundation",
       "description": "Liquid foundation for a natural look.",
       "price": 15,
-      "category_ids": ["C012"]
+      "category_ids": ["C024", "C012"]
     },
     {
       "product_id": "P023",
       "name": "Dior Sauvage Perfume",
       "description": "Famous perfume with a fresh and spicy scent.",
       "price": 120,
-      "category_ids": ["C013"]
+      "category_ids": ["C024", "C013"]
     },
     {
       "product_id": "P024",
       "name": "Chanel No. 5 Perfume",
       "description": "Iconic perfume with a floral scent.",
       "price": 150,
-      "category_ids": ["C013"]
+      "category_ids": ["C024", "C013"]
     },
     {
       "product_id": "P025",
       "name": "NARS Radiant Concealer",
       "description": "Concealer for a flawless complexion.",
       "price": 28,
-      "category_ids": ["C012"]
+      "category_ids": ["C024", "C012"]
     },
     {
       "product_id": "P026",
       "name": "Clinique Moisture Surge",
       "description": "Hydrating gel-cream for all skin types.",
       "price": 35,
-      "category_ids": ["C012"]
+      "category_ids": ["C024", "C012"]
     },
     {
       "product_id": "P027",
       "name": "Fenty Beauty Highlighter",
       "description": "Illuminating highlighter for a radiant glow.",
       "price": 38,
-      "category_ids": ["C012"]
+      "category_ids": ["C024", "C012"]
     },
     {
       "product_id": "P028",
       "name": "Chanel Hand Cream",
       "description": "Luxurious hand cream for soft hands.",
       "price": 50,
-      "category_ids": ["C012"]
+      "category_ids": ["C024", "C012"]
     },
     {
       "product_id": "P029",
       "name": "Nike Gym Gloves",
       "description": "Durable gloves for gym workouts.",
       "price": 20,
-      "category_ids": ["C011"]
+      "category_ids": ["C024", "C016", "C018", "C011"]
     },
     {
       "product_id": "P030",
       "name": "Tissot PRX Powermatic 80",
       "description": "Swiss automatic watch with a classic design.",
       "price": 21,
-      "category_ids": ["C006", "C010"]
+      "category_ids": ["C006", "C016"]
     },
     {
       "product_id": "P031",
       "name": "Doxa Trofeo Automatic",
       "description": "Luxury watch with a unique design.",
       "price": 49,
-      "category_ids": ["C006", "C010"]
+      "category_ids": ["C006", "C016"]
     },
     {
       "product_id": "P032",
       "name": "Longiness Conquest Heritage",
       "description": "Elegant watch with a classic look.",
       "price": 87,
-      "category_ids": ["C006", "C010"]
+      "category_ids": ["C016", "C006"]
     },
     {
       "product_id": "P033",
       "name": "Daniel Wellington Bracelet",
       "description": "Stylish bracelet that complements any outfit.",
       "price": 11,
-      "category_ids": ["C010"]
+      "category_ids": ["C016", "C010"]
     },
     {
       "product_id": "P034",
       "name": "Samsung Galaxy Tab S8",
       "description": "High-performance tablet with a stunning display.",
       "price": 700,
-      "category_ids": ["C004"]
+      "category_ids": ["C015","C004"]
     },
     {
       "product_id": "P035",
       "name": "Apple iPad Pro",
       "description": "Powerful tablet with advanced features.",
       "price": 900,
-      "category_ids": ["C004"]
+      "category_ids": ["C015","C004"]
     },
     {
       "product_id": "P036",
       "name": "LG OLED TV",
       "description": "Stunning OLED TV with vibrant colors.",
       "price": 1500,
-      "category_ids": ["C008"]
+      "category_ids": ["C015","C008"]
     },
     {
       "product_id": "P037",
       "name": "Sony Bravia 4K TV",
       "description": "High-definition TV with smart features.",
       "price": 1200,
-      "category_ids": ["C008"]
+      "category_ids": ["C015","C008"]
     },
     {
       "product_id": "P038",
       "name": "Dell UltraSharp Monitor",
       "description": "High-resolution monitor for professional use.",
       "price": 800,
-      "category_ids": ["C009"]
+      "category_ids": ["C015","C009"]
     },
     {
       "product_id": "P039",
       "name": "LG UltraWide Monitor",
       "description": "Wide monitor for multitasking and gaming.",
       "price": 600,
-      "category_ids": ["C009"]
+      "category_ids": ["C015","C009"]
     },
     {
       "product_id": "P040",
       "name": "Logitech MX Master Mouse",
       "description": "Ergonomic mouse with advanced features.",
       "price": 100,
-      "category_ids": ["C010"]
+      "category_ids": ["C015","C010"]
     },
     {
       "product_id": "P041",
       "name": "Razer Gaming Mouse",
       "description": "High-performance gaming mouse with customizable buttons.",
       "price": 80,
-      "category_ids": ["C010"]
+      "category_ids": ["C015","C010"]
     },
     {
       "product_id": "P042",
       "name": "Corsair Gaming Keyboard",
       "description": "Mechanical keyboard with customizable RGB lighting.",
       "price": 150,
-      "category_ids": ["C010"]
+      "category_ids": ["C015", "C010"]
     },
     {
       "product_id": "P043",
       "name": "Samsung Galaxy Buds Pro",
       "description": "Wireless earbuds with active noise cancellation.",
       "price": 200,
-      "category_ids": ["C003"]
+      "category_ids": ["C015", "C010", "C003"]
     },
     {
       "product_id": "P044",
       "name": "JBL Flip 5 Speaker",
       "description": "Portable Bluetooth speaker with great sound quality.",
       "price": 120,
-      "category_ids": ["C010"]
+      "category_ids": ["C015", "C010"]
+    },
+    {
+      "product_id": "P045",
+      "name": "Canon EOS R5 Camera",
+      "description": "High-resolution mirrorless camera for professional photography.",
+      "price": 4000,
+      "category_ids": ["C015", "C007"]
+    },
+    {
+      "product_id": "P046",
+      "name": "Nikon Z6 II Camera",
+      "description": "Versatile mirrorless camera with great low-light performance.",
+      "price": 2500,
+      "category_ids": ["C015", "C007"]
+    },
+    {
+      "product_id": "P047",
+      "name": "Sony A7 III Camera",
+      "description": "Full-frame mirrorless camera with fast autofocus.",
+      "price": 3000,
+      "category_ids": ["C015", "C007"]
+    },
+    {
+      "product_id": "P048",
+      "name": "Fujifilm X-T4 Camera",
+      "description": "Compact mirrorless camera with great color reproduction.",
+      "price": 1800,
+      "category_ids": ["C015", "C007"]
     }
   ],
   "orders": [
@@ -370,6 +405,10 @@
       "order_id": "22",
       "user_id": "U005",
       "products": ["P044", "P032", "P023", "P027"]
-    }
+    },
+    { "order_id": "23", "user_id": "U001", "products": ["P045"] },
+    { "order_id": "24", "user_id": "U002", "products": ["P046"] },
+    { "order_id": "25", "user_id": "U003", "products": ["P047"] },
+    { "order_id": "26", "user_id": "U004", "products": ["P048"] }
   ]
 }

@@ -38,10 +38,7 @@ export class ProductRecommendationController {
     if (!userId) {
       throw new BadRequestError("User ID is required");
     }
-    if (isNaN(parseInt(userId))) {
-      throw new BadRequestError("User ID must be a number");
-    }
-    const recommendations = await ProductRepository.getRecommendationByUserId(parseInt(userId));
+    const recommendations = await ProductRepository.getRecommendationByUserId(userId);
     return { recommendations }
   })
 

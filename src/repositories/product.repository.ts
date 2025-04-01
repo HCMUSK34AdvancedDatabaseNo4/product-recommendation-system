@@ -7,22 +7,7 @@ export class ProductRepository {
     constructor() {
 
     }
-    static async get_recommandations(id: number) {
-        const query = `
-        MATCH (u:User {user_id:'${id}'})
-        OPTIONAL MATCH (u)-[:ORDERED]->(o:Order)-[:CONTAINS]->(p:Product)
-        WITH COLLECT(DISTINCT p) + COLLECT(DISTINCT p2) as products, u
-        UNWIND products as product
-        MATCH (otherUser:User)-[:ORDERED|HAS_IN_CART]->(p3:Product)
-        WHERE NOT (u)-[:ORDERED|HAS_IN_CART]->(p3) AND p3.id <> product.id
-        WITH DISTINCT p3, COUNT(DISTINCT otherUser) as similarity 
-        ORDER BY similarity DESC
-        RETURN p3 LIMIT 12`
-        const result = await RunQuery(query);
-        return result?.records.map((record) => record.get("p3"));
-    }
-
-    static async getRecommendationByUserId(userId: number) {
+    static async getRecommendationByUserId(userId: string) {
         const checkUserQuery = `
             MATCH (u:User {user_id: $userId})
             RETURN COUNT(u) AS userCount
@@ -39,7 +24,7 @@ export class ProductRepository {
             MATCH (otherUser:User)-[:ORDERED]->(:Order)-[:CONTAINS]->(recommendedProduct:Product)-[:BELONGS_TO]->(c)
             WHERE NOT (u)-[:ORDERED]->(:Order)-[:CONTAINS]->(recommendedProduct) 
             AND otherUser <> u
-            RETURN recommendedProduct AS recommendedProduct, c AS category, COUNT(DISTINCT otherUser) AS score
+            RETURN recommendedProduct AS recommendedProduct, COUNT(DISTINCT otherUser) AS score
             ORDER BY score DESC
             LIMIT 10
 
@@ -52,7 +37,7 @@ export class ProductRepository {
             WITH hotProduct, COUNT(*) AS orderCount
             ORDER BY orderCount DESC
             LIMIT 10
-            RETURN hotProduct AS recommendedProduct, NULL AS category, orderCount AS score
+            RETURN hotProduct AS recommendedProduct, orderCount AS score
             LIMIT 10;
         `
 
@@ -71,9 +56,9 @@ export class ProductRepository {
 
     static async getRecommendationByProductId(productId: string) {
         const query =
-            `
-            MATCH (p:Product {product_id: $productId})-[:BELONGS_TO]->(c:Category)
-
+        `
+           MATCH (p:Product {product_id: $productId})-[:BELONGS_TO]->(c:Category)
+            
             // Find frequently co-purchased products
             OPTIONAL MATCH (:User)-[:ORDERED]->(:Order)-[:CONTAINS]->(p)
             MATCH (:User)-[:ORDERED]->(:Order)-[:CONTAINS]->(coPurchased:Product)
@@ -85,9 +70,9 @@ export class ProductRepository {
             WHERE recommended <> p
             WITH coPurchaseRecommendations, COLLECT(DISTINCT recommended) AS categoryRecommendations
 
-            // Separate WITH clause to avoid aggregation issues
-            WITH REDUCE(output = [], r IN coPurchaseRecommendations | output + r) + 
-                REDUCE(output = [], r IN categoryRecommendations | output + r) AS allRecommendations
+            // Combine the two lists, placing category recommendations first
+            WITH REDUCE(output = [], r IN categoryRecommendations | output + r) +
+                REDUCE(output = [], r IN coPurchaseRecommendations | output + r) AS allRecommendations
 
             UNWIND allRecommendations AS recommendedProduct
 
