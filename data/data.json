@@ -1,0 +1,241 @@
+{
+  "users": [
+    { "user_id": 1, "name": "Alice", "role": "user" },
+    { "user_id": 2, "name": "Bob", "role": "user" },
+    { "user_id": 3, "name": "Charlie", "role": "user" },
+    { "user_id": 4, "name": "David", "role": "supplier" },
+    { "user_id": 5, "name": "Eve", "role": "supplier" }
+  ],
+  "categories": [
+    { "category_id": "C001", "name": "Laptops" },
+    { "category_id": "C002", "name": "Smartphones" },
+    { "category_id": "C003", "name": "Headphones" },
+    { "category_id": "C004", "name": "Tablets" },
+    { "category_id": "C005", "name": "Gaming Consoles" },
+    { "category_id": "C006", "name": "Smartwatches" },
+    { "category_id": "C007", "name": "Cameras" },
+    { "category_id": "C008", "name": "TVs" },
+    { "category_id": "C009", "name": "Monitors" },
+    { "category_id": "C010", "name": "Accessories" },
+    { "category_id": "C011", "name": "Clothes" },
+    { "category_id": "C012", "name": "Cosmetics" }
+  ],
+  "products": [
+    {
+      "product_id": "P001",
+      "name": "MacBook Pro",
+      "brand": "Apple",
+      "price": 2000,
+      "category_ids": ["C001"]
+    },
+    {
+      "product_id": "P002",
+      "name": "Dell XPS 15",
+      "brand": "Dell",
+      "price": 1800,
+      "category_ids": ["C001"]
+    },
+    {
+      "product_id": "P003",
+      "name": "Asus ROG Strix",
+      "brand": "Asus",
+      "price": 2200,
+      "category_ids": ["C001"]
+    },
+    {
+      "product_id": "P004",
+      "name": "HP Spectre x360",
+      "brand": "HP",
+      "price": 1700,
+      "category_ids": ["C001"]
+    },
+    {
+      "product_id": "P005",
+      "name": "iPhone 14",
+      "brand": "Apple",
+      "price": 1200,
+      "category_ids": ["C002", "C003"]
+    },
+    {
+      "product_id": "P006",
+      "name": "Samsung Galaxy S23",
+      "brand": "Samsung",
+      "price": 1100,
+      "category_ids": ["C002"]
+    },
+    {
+      "product_id": "P007",
+      "name": "Google Pixel 7",
+      "brand": "Google",
+      "price": 900,
+      "category_ids": ["C002"]
+    },
+    {
+      "product_id": "P008",
+      "name": "OnePlus 11",
+      "brand": "OnePlus",
+      "price": 950,
+      "category_ids": ["C002"]
+    },
+    {
+      "product_id": "P009",
+      "name": "Sony WH-1000XM5",
+      "brand": "Sony",
+      "price": 400,
+      "category_ids": ["C003"]
+    },
+    {
+      "product_id": "P010",
+      "name": "Bose QuietComfort 45",
+      "brand": "Bose",
+      "price": 350,
+      "category_ids": ["C003"]
+    },
+    {
+      "product_id": "P011",
+      "name": "AirPods Pro",
+      "brand": "Apple",
+      "price": 250,
+      "category_ids": ["C003"]
+    },
+    {
+      "product_id": "P012",
+      "name": "Nike Air Hoodie",
+      "brand": "Nike",
+      "price": 80,
+      "category_ids": ["C004"]
+    },
+    {
+      "product_id": "P013",
+      "name": "Adidas Ultraboost T-Shirt",
+      "brand": "Adidas",
+      "price": 40,
+      "category_ids": ["C004"]
+    },
+    {
+      "product_id": "P014",
+      "name": "Levi's 501 Jeans",
+      "brand": "Levi's",
+      "price": 60,
+      "category_ids": ["C004"]
+    },
+    {
+      "product_id": "P015",
+      "name": "North Face Winter Jacket",
+      "brand": "The North Face",
+      "price": 150,
+      "category_ids": ["C004"]
+    },
+    {
+      "product_id": "P016",
+      "name": "Puma Running Shorts",
+      "brand": "Puma",
+      "price": 35,
+      "category_ids": ["C004"]
+    },
+    {
+      "product_id": "P017",
+      "name": "Under Armour Compression Shirt",
+      "brand": "Under Armour",
+      "price": 45,
+      "category_ids": ["C004"]
+    },
+    {
+      "product_id": "P018",
+      "name": "Gucci Leather Belt",
+      "brand": "Gucci",
+      "price": 250,
+      "category_ids": ["C004", "C003"]
+    },
+    {
+      "product_id": "P019",
+      "name": "H&M Cotton Sweatpants",
+      "brand": "H&M",
+      "price": 30,
+      "category_ids": ["C004"]
+    },
+    {
+      "product_id": "P020",
+      "name": "L'Oreal Revitalift Cream",
+      "brand": "L'Oreal",
+      "price": 30,
+      "category_ids": ["C005"]
+    },
+    {
+      "product_id": "P021",
+      "name": "MAC Matte Lipstick",
+      "brand": "MAC",
+      "price": 25,
+      "category_ids": ["C005"]
+    },
+    {
+      "product_id": "P022",
+      "name": "Maybelline Fit Me Foundation",
+      "brand": "Maybelline",
+      "price": 15,
+      "category_ids": ["C005"]
+    },
+    {
+      "product_id": "P023",
+      "name": "Dior Sauvage Perfume",
+      "brand": "Dior",
+      "price": 120,
+      "category_ids": ["C005"]
+    },
+    {
+      "product_id": "P024",
+      "name": "Chanel No. 5 Perfume",
+      "brand": "Chanel",
+      "price": 150,
+      "category_ids": ["C005"]
+    },
+    {
+      "product_id": "P025",
+      "name": "NARS Radiant Concealer",
+      "brand": "NARS",
+      "price": 28,
+      "category_ids": ["C005"]
+    },
+    {
+      "product_id": "P026",
+      "name": "Clinique Moisture Surge",
+      "brand": "Clinique",
+      "price": 35,
+      "category_ids": ["C005"]
+    },
+    {
+      "product_id": "P027",
+      "name": "Fenty Beauty Highlighter",
+      "brand": "Fenty Beauty",
+      "price": 38,
+      "category_ids": ["C005"]
+    },
+    {
+      "product_id": "P028",
+      "name": "Chanel Hand Cream",
+      "brand": "Chanel",
+      "price": 50,
+      "category_ids": ["C005", "C003"]
+    },
+    {
+      "product_id": "P029",
+      "name": "Nike Gym Gloves",
+      "brand": "Nike",
+      "price": 20,
+      "category_ids": ["C004", "C003"]
+    }
+  ],
+  "orders": [
+    { "order_id": 2, "user_id": 1, "products": ["P005", "P011"] },
+    { "order_id": 7, "user_id": 1, "products": ["P003", "P014"] },
+    { "order_id": 3, "user_id": 2, "products": ["P010", "P007"] },
+    { "order_id": 4, "user_id": 2, "products": ["P006", "P024"] },
+    { "order_id": 5, "user_id": 3, "products": ["P012", "P016"] },
+    { "order_id": 6, "user_id": 3, "products": ["P002", "P017"] },
+    { "order_id": 8, "user_id": 4, "products": ["P004", "P018"] }
+  ],
+  "suppliers": [
+    { "user_id": 4, "products": ["P016", "P013", "P012"] },
+    { "user_id": 5, "products": ["P021", "P023"] }
+  ]
+}
