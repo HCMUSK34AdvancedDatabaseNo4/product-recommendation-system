@@ -1,12 +1,66 @@
 import { RunQuery } from "../db_connect"
 import { NotFoundError } from "../helpers/error-handler";
 import { ProductModel } from "../models";
+import { ProductCategoryModel } from "../models/product-category.model";
 
 
 export class ProductRepository {
     constructor() {
 
     }
+
+    static async getAllProducts() {
+        const query = `
+            MATCH (p:Product)-[:BELONGS_TO]->(c:Category)
+            RETURN p, c
+        `
+        const result = await RunQuery(query);
+        return result?.records.map((record) => {
+            const product = record.get("p")
+            const category = record.get("c")
+            return {
+                product: new ProductModel({
+                    id: product.properties.product_id,
+                    name: product.properties.name,
+                    description: product.properties.description,
+                    price: product.properties.price,
+                }),
+                category: new ProductCategoryModel({
+                    id: category.properties.category_id,
+                    name: category.properties.name,
+                })
+            }
+        });
+    }
+
+    static async getProductById(productId: string) {
+        const query = `
+            MATCH (p:Product {product_id: $productId})-[:BELONGS_TO]->(c:Category)
+            RETURN p, COLLECT(c) AS categories
+        `
+        const result = await RunQuery(query, { productId });
+        return result?.records.map((record) => {
+            const product = record.get("p")
+            const categories = record.get("categories")
+            return {
+                product: new ProductModel({
+                    id: product.properties.product_id,
+                    name: product.properties.name,
+                    description: product.properties.description,
+                    price: product.properties.price,
+                }),
+                categories: categories.map((category: any) => {
+                    return new ProductCategoryModel({
+                        id: category.properties.category_id,
+                        name: category.properties.name,
+                        description: category.properties.description,
+                    })
+                })
+            }
+        });
+    }
+
+
     static async getRecommendationByUserId(userId: string) {
         const checkUserQuery = `
             MATCH (u:User {user_id: $userId})
@@ -57,7 +111,7 @@ export class ProductRepository {
     static async getRecommendationByProductId(productId: string) {
         const query =
         `
-           MATCH (p:Product {product_id: $productId})-[:BELONGS_TO]->(c:Category)
+            MATCH (p:Product {product_id: $productId})-[:BELONGS_TO]->(c:Category)
             
             // Find frequently co-purchased products
             OPTIONAL MATCH (:User)-[:ORDERED]->(:Order)-[:CONTAINS]->(p)
@@ -84,6 +138,33 @@ export class ProductRepository {
         const result = await RunQuery(query, { productId });
         return result?.records.map((record) => {
             const product = record.get("recommendedProduct")
+            return new ProductModel({
+                id: product.properties.product_id,
+                name: product.properties.name,
+                description: product.properties.description,
+                price: product.properties.price,
+            })
+        });
+    }
+
+    static async addProduct(product: ProductModel) {
+        const query = `
+            MERGE (p:Product {
+                product_id: $productId,
+                name: $name,
+                description: $description,
+                price: $price
+            })
+            RETURN p
+        `
+        const result = await RunQuery(query, {
+            productId: product.id,
+            name: product.name,
+            description: product.description,
+            price: product.price
+        });
+        return result?.records.map((record) => {
+            const product = record.get("p")
             return new ProductModel({
                 id: product.properties.product_id,
                 name: product.properties.name,

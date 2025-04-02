@@ -24,7 +24,22 @@ export class ProductRecommendationController {
     res.json({ message: "test" });
   }
 
-  public getRecommendation = APIRequest(async (req: Request, res: Response, next: NextFunction) => {
+  public getAllProducts = APIRequest(async (req: Request, res: Response, next: NextFunction) => {
+    const products = await ProductRepository.getAllProducts();
+    return { products }
+  })
+
+
+  public getProductById = APIRequest(async (req: Request, res: Response, next: NextFunction) => {
+    const productId = req.params.productId;
+    if (!productId) {
+      throw new BadRequestError("Product ID is required");
+    }
+    const products = await ProductRepository.getProductById(productId);
+    return { products }
+  })
+
+  public getProductRecommendation = APIRequest(async (req: Request, res: Response, next: NextFunction) => {
     const productId = req.params.productId;
     if (!productId) {
       throw new BadRequestError("Product ID is required");
@@ -44,7 +59,9 @@ export class ProductRecommendationController {
 
 
   public routes() {
-    this.router.get("/product/:productId", this.getRecommendation);
+    this.router.get("/", this.getAllProducts);
+    this.router.get("/:productId", this.getProductById);
+    this.router.get("/product/:productId", this.getProductRecommendation);
     this.router.get("/user/:userId", this.getRecommendationByUserId);
   }
 }
