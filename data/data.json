@@ -7,408 +7,976 @@
     { "user_id": "U005", "name": "Eve", "role": "supplier" }
   ],
   "categories": [
-    { "category_id": "C001", "name": "Laptops" },
-    { "category_id": "C002", "name": "Smartphones" },
-    { "category_id": "C003", "name": "Headphones" },
-    { "category_id": "C004", "name": "Tablets" },
-    { "category_id": "C005", "name": "Gaming Consoles" },
-    { "category_id": "C006", "name": "Watches" },
-    { "category_id": "C007", "name": "Cameras" },
-    { "category_id": "C008", "name": "TVs" },
-    { "category_id": "C009", "name": "Monitors" },
-    { "category_id": "C010", "name": "Accessories" },
-    { "category_id": "C011", "name": "Clothes" },
-    { "category_id": "C012", "name": "Cosmetics" },
-    { "category_id": "C013", "name": "Perfume" },
-    { "category_id": "C014", "name": "Grocery" },
-    { "category_id": "C015", "name": "Electronics" },
-    { "category_id": "C016", "name": "Fashion" },
-    { "category_id": "C017", "name": "Books" },
-    { "category_id": "C018", "name": "Sports" },
-    { "category_id": "C019", "name": "Toys" },
-    { "category_id": "C023", "name": "Footwear" },
-    { "category_id": "C024", "name": "Health And Beauty" }
+    {
+      "id": "61a6058e6c43f32854e51f52",
+      "categoryName": "Bags, Wallets & Belts",
+      "description": "Bags, Wallets & Belts",
+      "logoUrl": "string",
+      "createdDate": "2025-03-29T18:30:15.031Z",
+      "updatedDate": "2025-03-29T18:30:15.031Z",
+      "active": true
+    },
+    {
+      "id": "61a6058e6c43f32854e51f53",
+      "categoryName": "Footwear",
+      "description": "Footwear",
+      "logoUrl": "string",
+      "createdDate": "2025-03-29T18:30:15.031Z",
+      "updatedDate": "2025-03-29T18:30:15.031Z",
+      "active": true
+    },
+    {
+      "id": "61a6058e6c43f32854e51f55",
+      "categoryName": "Clothing and Accessories",
+      "description": "Clothing and Accessories",
+      "logoUrl": "string",
+      "createdDate": "2025-03-29T18:30:15.031Z",
+      "updatedDate": "2025-03-29T18:30:15.031Z",
+      "active": true
+    },
+    {
+      "id": "61a6058e6c43f32854e51f57",
+      "categoryName": "Toys",
+      "description": "Toys",
+      "logoUrl": "string",
+      "createdDate": "2025-03-29T18:30:15.031Z",
+      "updatedDate": "2025-03-29T18:30:15.031Z",
+      "active": true
+    },
+    {
+      "id": "67eeafd94c5d306f29de83a6",
+      "categoryName": "Electronics",
+      "description": "Electronics",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eeafde4c5d306f29de83a7",
+      "categoryName": "Fashion",
+      "description": "Fashion",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eeafe84c5d306f29de83a8",
+      "categoryName": "Health And Beauty",
+      "description": "Health And Beauty",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eeaff04c5d306f29de83a9",
+      "categoryName": "Clothes",
+      "description": "Clothes",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eeb0084c5d306f29de83aa",
+      "categoryName": "Laptops",
+      "description": "Laptops",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eeb00c4c5d306f29de83ab",
+      "categoryName": "Smartphones",
+      "description": "Smartphones",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eeb0104c5d306f29de83ac",
+      "categoryName": "Headphones",
+      "description": "Headphones",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eec8019b15201e7427d80f",
+      "categoryName": "Health And Beauty",
+      "description": "Health And Beauty",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eec8369b15201e7427d810",
+      "categoryName": "Tablets",
+      "description": "Tablets",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eec84e9b15201e7427d811",
+      "categoryName": "Watches",
+      "description": "Watches",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eec8559b15201e7427d812",
+      "categoryName": "Cameras",
+      "description": "Cameras",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eec8659b15201e7427d813",
+      "categoryName": "TVs",
+      "description": "TVs",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    },
+    {
+      "id": "67eec8699b15201e7427d814",
+      "categoryName": "Monitors",
+      "description": "Monitors",
+      "logoUrl": "string",
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
+    }
   ],
   "products": [
     {
-      "product_id": "P001",
-      "name": "MacBook Pro",
-      "description": "Apple's latest MacBook Pro with M1 chip.",
+      "id": "67eec6cb9b15201e7427d7e0",
+      "productName": "MacBook Pro M4",
+      "description": "SUPERCHARGED BY M4 PRO OR M4 MAX \u00e2\u20ac\u201d The 14-inch MacBook Pro with the M4 Pro or M4 Max chip gives you outrageous performance in a powerhouse laptop built for Apple Intelligence.* With all-day battery life and a breathtaking Liquid Retina XDR display with up to 1600 nits peak brightness, it\u00e2\u20ac\u2122s pro in every way.",
       "price": 2000,
-      "category_ids": ["C015", "C001"]
+      "images": [
+        "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1728916305295",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:90/plain/https://cellphones.com.vn/media/wysiwyg/laptop/macbook/macbook-pro/M4/macbook-pro-14-inch-m4-16gb-512gb-2.jpg"
+      ],
+      "categories": ["Electronics", "Laptops"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P002",
-      "name": "Dell XPS 15",
-      "description": "Dell's premium laptop with a stunning display.",
+      "id": "67eec6cc9b15201e7427d7e1",
+      "productName": "Dell XPS 15 9500",
+      "description": "Processor & Memory: 10th Gen Intel Core i7-10750H Processor 2.6GHz 32GB DDR4 2933MHz RAM Drives: 1TB PCIe NVMe M.2 Solid State Drive No Optical Drive Operating System: Microsoft Windows 10 Professional (64-bit) Graphics & Video: 15.6\" Touchscreen InfinityEdge Anti-Reflective 4K Ultra HD (3840 x 2400) 500-Nit Display 4GB NVIDIA GeForce GTX 1650 Ti Graphics Audio: Stereo Speakers with MaxxAudio Pro Communications: KILLER AX1650 (2x2) Wi-Fi 6 Gig+ and Bluetooth 5.0 Integrated HD 720p Webcam Keyboard: Backlit Keyboard Fingerprint Reader Ports & Slots: 1x 3.1 USB Type-C with Power Delivery and DisplayPort 2x Thunderbolt 3.0 1x Wedge Shaped Lock Slot 1x Headphone/Microphone Combo Jack 1x Media Card Reader Power Supply: 6-Cell 86WHr Battery Additional Information: Dimensions: 13.57\" W x 9.06\" L x 0.71\" H Approximate Weight: 4.5 lbs.",
       "price": 1800,
-      "category_ids": ["C015", "C001"]
+      "images": [
+        "https://bizweb.dktcdn.net/100/512/769/files/1-6ed8d810-cc89-456d-b9b3-6ae2d3f79237.jpg?v=1720155508145",
+        "https://product.hstatic.net/200000553329/product/dell-xps-7590-gtx1050ti_44f36fbf1c3e44c580b4fe33ac7b721d.jpg",
+        "https://laptoptld.com/wp-content/uploads/2023/01/Laptop-Dell-XPS-15-7590.jpg"
+      ],
+      "categories": ["Electronics", "Laptops"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P003",
-      "name": "Asus ROG Strix",
+      "id": "67eec6cd9b15201e7427d7e2",
+      "productName": "Asus ROG Strix",
       "description": "Gaming laptop with high performance.",
       "price": 2200,
-      "category_ids": ["C015", "C001"]
+      "images": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_1__3_33.png"
+      ],
+      "categories": ["Electronics", "Laptops"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P004",
-      "name": "HP Spectre x360",
+      "id": "67eec6ce9b15201e7427d7e3",
+      "productName": "HP Spectre x360",
       "description": "Convertible laptop with a sleek design.",
       "price": 1700,
-      "category_ids": ["C015", "C001"]
+      "images": [
+        "https://www.laptopvip.vn/images/detailed/19/hp-x360--15-gemcut-4_kz1s-0z.jpg",
+        "https://hungphatlaptop.com/wp-content/uploads/2025/01/HP-Spectre-X360-2-in-1-16-inch-2024-H4.jpeg.webp"
+      ],
+      "categories": ["Electronics", "Laptops"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P005",
-      "name": "iPhone 14",
+      "id": "67eec6cf9b15201e7427d7e4",
+      "productName": "iPhone 14 Pro",
       "description": "Apple's latest smartphone with advanced features.",
       "price": 1200,
-      "category_ids": ["C015", "C002"]
+      "images": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-pro_2__5.png",
+        "https://bachlongstore.vn/vnt_upload/product/11_2023/5646.jpg",
+        "https://cdn.tgdd.vn/Products/Images/42/247508/Kit/iphone-14-pro-note-new.jpg"
+      ],
+      "categories": ["Electronics", "Smartphones"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P006",
-      "name": "Samsung Galaxy S23",
+      "id": "67eec6d09b15201e7427d7e5",
+      "productName": "Samsung Galaxy S25",
       "description": "Samsung's flagship smartphone with a stunning display.",
       "price": 1100,
-      "category_ids": ["C015", "C002"]
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/42/333347/samsung-galaxy-s25-ultra-blue-thumbai-600x600.jpg",
+        "https://images.samsung.com/vn/smartphones/galaxy-s25-ultra/buy/product_color_gray_PC.png"
+      ],
+      "categories": ["Electronics", "Smartphones"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P007",
-      "name": "Google Pixel 7",
+      "id": "67eec6d19b15201e7427d7e6",
+      "productName": "Google Pixel 7",
       "description": "Google's latest smartphone with a great camera.",
       "price": 900,
-      "category_ids": ["C015", "C002"]
+      "images": [
+        "https://cdn2.cellphones.com.vn/x/media/catalog/product/v/d/vddgg.jpg",
+        "https://sonpixel.vn/wp-content/uploads/2022/10/Google-Pixel-7.jpg",
+        "https://bizweb.dktcdn.net/thumb/1024x1024/100/168/366/products/untitled-design-6-d5976be9-bcd7-4c50-8b98-7f62eb2a5b81-85474a76-063a-4ad2-9504-97d8297533c9.png"
+      ],
+      "categories": ["Electronics", "Smartphones"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P008",
-      "name": "OnePlus 11",
-      "description": "OnePlus's latest smartphone with fast charging.",
+      "id": "67eec6d29b15201e7427d7e7",
+      "productName": "OnePlus 11",
+      "description": "OnePlus 11 has strong technological improvements along with a luxurious design and extremely powerful performance from the Snapdragon 8 Gen 2 chip. OnePlus 11 will be the perfect choice, supporting users to handle work effectively and meet many different needs of users.",
       "price": 950,
-      "category_ids": ["C015", "C002"]
+      "images": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/n/oneplus_11_-_black_-_rgb_1.jpg",
+        "https://cdn.tgdd.vn/Files/2023/02/08/1508019/oneplus11_6-080223-223856-800-resize.jpg",
+        "https://dienthoaihay.vn/images/products/2023/01/07/large/oneplus-11-xanh_1673062505.jpg"
+      ],
+      "categories": ["Electronics", "Smartphones"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P009",
-      "name": "Sony WH-1000XM5",
-      "description": "Noise-cancelling headphones with great sound quality.",
+      "id": "67eec6d39b15201e7427d7e8",
+      "productName": "Sony WH-1000XM5",
+      "description": "SONY WH-1000XM5 is a wireless headphone that provides high-resolution quality and high-quality sound with the industry's highest class noise canceling function that realizes the quietness of the new generation.",
       "price": 400,
-      "category_ids": ["C015", "C003"]
+      "images": [
+        "https://cdn.tgdd.vn/Products/Images/54/313692/tai-nghe-bluetooth-chup-tai-sony-wh1000xm5-trang-1-750x500.jpg",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_172_2.png",
+        "https://dienmaytructuyen.vn/wp-content/uploads/2022/06/wh1000xm5.webp"
+      ],
+      "categories": ["Electronics", "Headphones"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P010",
-      "name": "Bose QuietComfort 45",
-      "description": "Comfortable headphones with excellent noise cancellation.",
+      "id": "67eec6d39b15201e7427d7e9",
+      "productName": "Bose QuietComfort 45",
+      "description": "NOISE CANCELLING HEADPHONES: Effortlessly combines noise cancellation technology with passive features so you can shut off the outside world, quiet distractions, and take music beyond the beat.",
       "price": 350,
-      "category_ids": ["C015", "C003"]
+      "images": [
+        "https://m.media-amazon.com/images/I/51aw022aEaL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61j+d6wLCEL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61Ym4SBP7zL._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Headphones"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P011",
-      "name": "AirPods Pro",
-      "description": "Apple's wireless earbuds with active noise cancellation.",
+      "id": "67eec6d49b15201e7427d7ea",
+      "productName": "AirPods Pro 2",
+      "description": "Apple AirPods Pro (2nd Generation) Wireless Ear Buds with USB-C Charging, Up to 2X More Active Noise Cancelling Bluetooth Headphones, Transparency Mode, Adaptive Audio, Personalized Spatial Audio.",
       "price": 250,
-      "category_ids": ["C015", "C003"]
+      "images": [
+        "https://m.media-amazon.com/images/I/51NRGHU2NoL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/611pEx7220L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81Kd2CPdWBL._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Headphones"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P012",
-      "name": "Nike Air Hoodie",
+      "id": "67eec6d59b15201e7427d7eb",
+      "productName": "Nike Air Brushed-back Fleece Pullover Hoodie",
       "description": "Comfortable hoodie for sports and casual wear.",
       "price": 80,
-      "category_ids": ["C016", "C011"]
+      "images": [
+        "https://m.media-amazon.com/images/I/51FCS7qwDUL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/51nuhPYMUiL._AC_SX679_.jpg"
+      ],
+      "categories": ["Fashion", "Clothes"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P013",
-      "name": "Adidas Ultraboost T-Shirt",
-      "description": "Breathable t-shirt for running and workouts.",
+      "id": "67eec6d69b15201e7427d7ec",
+      "productName": "adidas Men's Essentials Single Jersey 3-Stripes T-Shirt",
+      "description": "Men's crew tee for everyday active lifestyles.",
       "price": 40,
-      "category_ids": ["C016", "C018", "C011"]
+      "images": [
+        "https://m.media-amazon.com/images/I/71HYdxu4IkL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/519XTqmfJAL._AC_SX679_.jpg"
+      ],
+      "categories": ["Fashion", "Sports", "Clothes"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P014",
-      "name": "Levi's 501 Jeans",
-      "description": "Classic jeans with a timeless design.",
+      "id": "67eec6d79b15201e7427d7ed",
+      "productName": "Levi's Women's 501 90s Jeans",
+      "description": "Runs large; designed for a loose fit. For a higher and closer fit, size down, Intended for a mid rise with a straight leg fit. Non-stretch denim will soften and give with wear.",
       "price": 60,
-      "category_ids": ["C016", "C011"]
+      "images": [
+        "https://m.media-amazon.com/images/I/71TaDWcZ-lL._AC_SY741_.jpg",
+        "https://m.media-amazon.com/images/I/81ODvWj-SpL._AC_SY741_.jpg"
+      ],
+      "categories": ["Fashion", "Clothes"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P015",
-      "name": "North Face Winter Jacket",
-      "description": "Warm jacket for cold weather.",
+      "id": "67eec6d89b15201e7427d7ee",
+      "productName": "The North Face Men's Flare 2 Insulated 550",
+      "description": "Insulated Warmth: Experience superior cold-weather protection with our 550-fill down insulation, ensuring you stay cozy on any winter adventure",
       "price": 150,
-      "category_ids": ["C016", "C011"]
+      "images": [
+        "https://m.media-amazon.com/images/I/71n3on-ZmVL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/710IVZxyzsL._AC_SX569_.jpg"
+      ],
+      "categories": ["Fashion", "Clothes"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P016",
-      "name": "Puma Running Shorts",
-      "description": "Lightweight shorts for running and workouts.",
+      "id": "67eec6d99b15201e7427d7ef",
+      "productName": "PUMA Men's Run Favorite Velocity 5\" Shorts",
+      "description": "The Run Favourite shorts are here to help you strive for the highest in performance. The shorts feature moisture-wicking technology to keep you dry, have reflective graphics for improved safety, and a mesh insert for improved breathability.",
       "price": 35,
-      "category_ids": ["C016", "C018", "C011"]
+      "images": [
+        "https://m.media-amazon.com/images/I/6190GvauqpL._AC_SX679_.jpg"
+      ],
+      "categories": ["Fashion", "Sports", "Clothes"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P017",
-      "name": "Under Armour Compression Shirt",
-      "description": "Compression shirt for sports and workouts.",
+      "id": "67eec6da9b15201e7427d7f0",
+      "productName": "Under Armour Men's HeatGear Compression Short-Sleeve T-Shirt",
+      "description": "HeatGear\u00c2\u00ae Armour is our original performance baselayer\u00e2\u20ac\u201dthe one you put on first and take off last. So we made it extra comfortable by wicking sweat and stretching so you can move no matter what. Super-light HeatGear\u00c2\u00ae fabric delivers superior coverage without weighing you down. Mesh underarm & back panels for strategic ventilation. Material wicks sweat & dries really fast. Ergonomic design keeps seams off high abrasion areas & increases durability. Hybrid raglan sleeve construction for added range of motion & comfort. Write-in locker tag on back of neck for your initials or number. Compression:Ultra-tight, second-skin fit. 84% Polyester/16% Elastane.",
       "price": 45,
-      "category_ids": ["C016", "C011"]
+      "images": [
+        "https://m.media-amazon.com/images/I/61awChMUawL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/51ymVm5TGHL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/51qiK7yJkeL._AC_SX679_.jpg"
+      ],
+      "categories": ["Fashion", "Clothes"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P018",
-      "name": "Gucci Leather Belt",
-      "description": "Luxury leather belt with a classic design.",
+      "id": "67eec6db9b15201e7427d7f1",
+      "productName": "Gucci Leather Belt With Double G Buckle",
+      "description": "The Gucci Leather Belt With Double G Buckle 4cm black can be combined with all outfits, from dusty, street style with a simple t-shirt and jeans, they can be transformed with a dress or elegant suit to attend an event.",
       "price": 250,
-      "category_ids": ["C016", "C011"]
+      "images": [
+        "https://cdn.vuahanghieu.com/unsafe/0x900/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2019/04/that-lung-gucci-leather-belt-with-double-g-buckle-4cm-5caef3ca52ede-11042019145906.jpg"
+      ],
+      "categories": ["Fashion", "Clothes"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P019",
-      "name": "H&M Cotton Sweatpants",
+      "id": "67eec6dc9b15201e7427d7f2",
+      "productName": "H&M Regular-Fit Cotton Cargo Joggers with DryMove",
       "description": "Comfortable sweatpants for casual wear.",
       "price": 30,
-      "category_ids": ["C016", "C011"]
+      "images": [
+        "https://image.hm.com/assets/hm/d5/9a/d59a57f6b56d39012842427a1ddfaedfea90b978.jpg?imwidth=1260",
+        "https://image.hm.com/assets/hm/f9/33/f9331f7a887acf16ab27538fa80b05a53782882f.jpg?imwidth=2160",
+        "https://image.hm.com/assets/hm/01/77/01774f676efb1ef8b083c74e104dcd2d0461a83e.jpg?imwidth=2160"
+      ],
+      "categories": ["Fashion", "Clothes"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P020",
-      "name": "L'Oreal Revitalift Cream",
-      "description": "Anti-aging cream with hyaluronic acid.",
+      "id": "67eec6dd9b15201e7427d7f3",
+      "productName": "L'Oreal Paris Revitalift Triple Power Anti-Aging Face Moisturizer",
+      "description": "Anti-aging moisturizer cream: This fragrance-free anti-aging retinol face cream addresses multiple signs of aging skin in just 1 week: reduces wrinkles, re-firms contours, brightens skin, smooths skin roughness and deeply hydrates for younger-looking skin.",
       "price": 30,
-      "category_ids": ["C024", "C012"]
+      "images": [
+        "https://m.media-amazon.com/images/I/71iOhmf894L._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81JinWKTvHL._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81CKsYzie9L._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81-H1iWnMGL._SL1500_.jpg"
+      ],
+      "categories": ["Health And Beauty", "Cosmetics"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P021",
-      "name": "MAC Matte Lipstick",
-      "description": "Long-lasting matte lipstick in various shades.",
+      "id": "67eec6de9b15201e7427d7f4",
+      "productName": "MAC Macximal Silky Matte - Velvet Teddy",
+      "description": "A silky matte lipstick that delivers 12 hours of full-coverage colour and eight hours of moisture. Non-feathering and non-bleeding, 12 hours. Conditions and nourishes lips.",
       "price": 25,
-      "category_ids": ["C024", "C012"]
+      "images": [
+        "https://m.media-amazon.com/images/I/51mbGFLfJ6L._SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71Alj5zqIeL._SL1500_.jpg"
+      ],
+      "categories": ["Health And Beauty", "Cosmetics"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P022",
-      "name": "Maybelline Fit Me Foundation",
+      "id": "67eec6de9b15201e7427d7f5",
+      "productName": "Maybelline Fit Me Matte",
       "description": "Liquid foundation for a natural look.",
       "price": 15,
-      "category_ids": ["C024", "C012"]
+      "images": [
+        "https://m.media-amazon.com/images/I/71uWS1iqeRL._SL1500_.jpg"
+      ],
+      "categories": ["Health And Beauty", "Cosmetics"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P023",
-      "name": "Dior Sauvage Perfume",
-      "description": "Famous perfume with a fresh and spicy scent.",
+      "id": "67eec6e09b15201e7427d7f6",
+      "productName": "Christian Dior Sauvage",
+      "description": "Top Note: Bergamot. Middle Note: Ambroxan. Bottom Note: Vanilla Absolute",
       "price": 120,
-      "category_ids": ["C024", "C013"]
+      "images": [
+        "https://m.media-amazon.com/images/I/51pZBw2NFHL._SL1059_.jpg"
+      ],
+      "categories": ["Health And Beauty", "Perfume"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P024",
-      "name": "Chanel No. 5 Perfume",
-      "description": "Iconic perfume with a floral scent.",
+      "id": "67eec6e09b15201e7427d7f7",
+      "productName": "Chanel No. 5 Perfume",
+      "description": "Chanel No 5 Chanel Chanel No 5 .05 oz / 1.5 ml edp Spray Chanel No 5 .05 oz / 1.5 ml Promo Size edp Spray Vial On Card An elegant, luxurious spray closest in strength and character to the parfum form. Feature and Benefits: The sleek, beautiful signature bottle is perfect for travelling",
       "price": 150,
-      "category_ids": ["C024", "C013"]
+      "images": [
+        "https://m.media-amazon.com/images/I/51HyR8K5oWL._AC_SL1032_.jpg"
+      ],
+      "categories": ["Health And Beauty", "Perfume"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P025",
-      "name": "NARS Radiant Concealer",
-      "description": "Concealer for a flawless complexion.",
+      "id": "67eec6e19b15201e7427d7f8",
+      "productName": "NARS Radiant Creamy Concealer",
+      "description": "Coveted by artists for its luxurious texture and luminous finish, new radiant creamy concealer evens skin with lightweight medium to high buildable coverage. Long wearing and crease-proof.",
       "price": 28,
-      "category_ids": ["C024", "C012"]
+      "images": ["https://m.media-amazon.com/images/I/41H9Or0bEsL._SL800_.jpg"],
+      "categories": ["Health And Beauty", "Cosmetics"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P026",
-      "name": "Clinique Moisture Surge",
-      "description": "Hydrating gel-cream for all skin types.",
+      "id": "67eec6e29b15201e7427d7f9",
+      "productName": "Clinique Moisture Surge",
+      "description": "Clinique Moisture Surge 10-hour auto-replenishing hydrator Gel Creme: Helps hydrate and moisturize the skin without drying or causing oiliness. Helps skin look vibrant and smooth, soft as silk. The gel-cream form is very gentle and easily absorbed, not greasy or causing acne. Possessing a breakthrough formula that activates Skin's Trans Epidermal Potential (TEEP), Clinique Moisture Surge moisturizer can maintain skin moisture for 100 hours.",
       "price": 35,
-      "category_ids": ["C024", "C012"]
+      "images": [
+        "https://cdn.chiaki.vn/unsafe/0x480/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/seller/1742908115-image.png",
+        "https://cdn.chiaki.vn/unsafe/0x960/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/seller/1742908185-image.png"
+      ],
+      "categories": ["Health And Beauty", "Cosmetics"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P027",
-      "name": "Fenty Beauty Highlighter",
-      "description": "Illuminating highlighter for a radiant glow.",
+      "id": "67eec6e39b15201e7427d7fa",
+      "productName": "Fenty Beauty by Rihanna Diamond Bomb All-Over Diamond Veil Ros\u0102\u00a9 Rave",
+      "description": "How Many Carats?! - Pure Platinum Sparkle A superfine glittering veil highlighter that leaves skin diamond-dusted in show stopping sparkle. SUPERFINE 3D SPARKLE FOR FACE & BODY INTENSE DIAMOND-DUSTED EFFECT. Give it to me quick: A one-of-a-kind diamond-dusted highlighter that applies like a 3D glittering veil, delivering pure, show-stopping sparkle all over the face and body. Tell me more: Shimmering 3D formula that\u00e2\u20ac\u2122ll leave your face & body crystal-coated Unique jelly-like powder that\u00e2\u20ac\u2122s bouncy, cool to the touch and melts into skin All-glitz-no-grit finish that looks incredible on all skin tones Faceted jewel-like compact that you\u00e2\u20ac\u2122ll never want to put down Fenty Beauty is 100% cruelty free. | Fill weight: 8 g / 0.28 oz INGREDIENTS.",
       "price": 38,
-      "category_ids": ["C024", "C012"]
+      "images": [
+        "https://m.media-amazon.com/images/I/61-B-MzXzKL._SL1100_.jpg",
+        "https://m.media-amazon.com/images/I/51YtvskovRL._SL1100_.jpg"
+      ],
+      "categories": ["Health And Beauty", "Cosmetics"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P028",
-      "name": "Chanel Hand Cream",
-      "description": "Luxurious hand cream for soft hands.",
-      "price": 50,
-      "category_ids": ["C024", "C012"]
+      "id": "67eec6e49b15201e7427d7fb",
+      "productName": "Chanel Le Lift Creme Main Cream",
+      "description": "A restoring hand cream that nourishes skin and helps maintain beautiful hands, which often show the first signs of aging. The formulas comforting, quick-absorbing texture leaves hands feeling smooth, soft and replenished.A restoring hand cream that nourishes skin and helps maintain beautiful hands, which often show the first signs of aging. The formulas comforting, quick-absorbing texture leaves hands feeling smooth, soft and replenished.",
+      "price": 76,
+      "images": [
+        "https://m.media-amazon.com/images/I/51UlwxaS+pL._SL1024_.jpg",
+        "https://m.media-amazon.com/images/I/41HHqo0FI4L._SL1024_.jpg"
+      ],
+      "categories": ["Health And Beauty", "Cosmetics"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P029",
-      "name": "Nike Gym Gloves",
-      "description": "Durable gloves for gym workouts.",
-      "price": 20,
-      "category_ids": ["C024", "C016", "C018", "C011"]
+      "id": "67eec6e59b15201e7427d7fc",
+      "productName": "Nike Therma-FIT Tech Fleece",
+      "description": "Cold hands, no more. Whether it's hitting the mountain for fun, chilly day adventures or getting that extra mile in during those cold mornings, these gloves can do it all. Soft, lightweight fleece with thermal technology helps manage your body heat in cold weather. Need to send a quick text or change the song on your playlist? The touch screen-compatible thumbs and forefingers keep you connected wherever your day takes you.",
+      "price": 32,
+      "images": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f0fac658-de68-4428-b715-166130c95cc6/NIKE+M+TF+TECH+FLEECE+LG+2.0.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ad4d6ca3-c080-4a53-87e6-fbf133418e6c/NIKE+M+TF+TECH+FLEECE+LG+2.0.png"
+      ],
+      "categories": ["Health And Beauty", "Fashion", "Sports", "Clothes"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P030",
-      "name": "Tissot PRX Powermatic 80",
+      "id": "67eec6e69b15201e7427d7fd",
+      "productName": "Tissot PRX Powermatic 80",
       "description": "Swiss automatic watch with a classic design.",
       "price": 21,
-      "category_ids": ["C006", "C016"]
+      "images": [
+        "https://image.donghohaitrieu.com/wp-content/uploads/2023/09/T137.407.16.041.00.jpg",
+        "https://nicewatch.vn/wp-content/uploads/2022/08/TISSOT-PRX-POWERMATIC-80-T137.407.16.041-2.jpg.webp",
+        "https://image.donghohaitrieu.com/wp-content/uploads/2021/10/T137.407.11.041.00-3.jpg"
+      ],
+      "categories": ["Watches", "Fashion"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P031",
-      "name": "Doxa Trofeo Automatic",
+      "id": "67eec6e79b15201e7427d7fe",
+      "productName": "Doxa Trofeo Automatic",
       "description": "Luxury watch with a unique design.",
       "price": 49,
-      "category_ids": ["C006", "C016"]
+      "images": [
+        "https://image.donghohaitrieu.com/wp-content/uploads/2025/01/2-dong-ho-doxa-d159twx.jpg",
+        "https://image.donghohaitrieu.com/wp-content/uploads/2025/01/2-dong-ho-doxa-d159tsv.jpg"
+      ],
+      "categories": ["Watches", "Fashion"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P032",
-      "name": "Longiness Conquest Heritage",
+      "id": "67eec6e89b15201e7427d7ff",
+      "productName": "Longines Conquest Heritage",
       "description": "Elegant watch with a classic look.",
       "price": 87,
-      "category_ids": ["C016", "C006"]
+      "images": [
+        "https://donghoduyanh.com/images/products/2024/01/11/large/l16504522_1704961947.jpg",
+        "https://donghominhtrieu.vn/wp-content/uploads/2024/10/1-Longines-Conquest-Heritage-L1.611.6.72.4-18K-Gold.jpg",
+        "https://24kara.com/files/thanhvien_upload/11/longines-conquest-heritage-central-power-reserve-l1-12.jpg"
+      ],
+      "categories": ["Fashion", "Watches"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P033",
-      "name": "Daniel Wellington Bracelet",
-      "description": "Stylish bracelet that complements any outfit.",
-      "price": 11,
-      "category_ids": ["C016", "C010"]
+      "id": "67eec6e89b15201e7427d800",
+      "productName": "Daniel Wellington Classic Cuff Bracelet",
+      "description": "The Classic Bracelet was designed to reflect the captivating appeal of our minimalist watches. With its casual yet tasteful allure, the Classic Bracelet is a true celebration of the impeccable craftsmanship behind all of Daniel Wellington\u00e2\u20ac\u2122s timeless designs.",
+      "price": 69,
+      "images": [
+        "https://m.media-amazon.com/images/I/41zI5SrANcL._AC_SY675_.jpg",
+        "https://m.media-amazon.com/images/I/51gNtYKM3GL._AC_SY675_.jpg",
+        "https://m.media-amazon.com/images/I/51AEUdYWteL._AC_SY675_.jpg"
+      ],
+      "categories": ["Fashion", "Accessories"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P034",
-      "name": "Samsung Galaxy Tab S8",
-      "description": "High-performance tablet with a stunning display.",
+      "id": "67eec6e99b15201e7427d801",
+      "productName": "Samsung Galaxy Tab S8",
+      "description": "Meet SAMSUNG Galaxy Tab S8, a top-of-the-line tablet designed to help you get more out of your day, wherever you happen to be. Take that video call for work at a coffee shop. Lose yourself in your favorite music videos at the park",
       "price": 700,
-      "category_ids": ["C015","C004"]
+      "images": [
+        "https://m.media-amazon.com/images/I/715AVcfGf2L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61wHCf98NhL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/616lnRQGGCL._AC_SL1200_.jpg"
+      ],
+      "categories": ["Electronics", "Tablets"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P035",
-      "name": "Apple iPad Pro",
-      "description": "Powerful tablet with advanced features.",
+      "id": "67eec6eb9b15201e7427d802",
+      "productName": "Apple iPad Pro 13-Inch (M4)",
+      "description": "WHY IPAD PRO \u00e2\u20ac\u201d iPad Pro is the ultimate iPad experience in an impossibly thin and light design. Featuring the breakthrough Ultra Retina XDR display, outrageous performance from the M4 chip, superfast wireless connectivity,* and compatibility with Apple Pencil Pro.* Plus powerful productivity features in iPadOS",
       "price": 900,
-      "category_ids": ["C015","C004"]
+      "images": [
+        "https://m.media-amazon.com/images/I/7147JzEtrqL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/714-7INRdwL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/812UO7Ja2nL._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Tablets"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P036",
-      "name": "LG OLED TV",
-      "description": "Stunning OLED TV with vibrant colors.",
+      "id": "67eec6eb9b15201e7427d803",
+      "productName": "LG 77-Inch Class OLED evo C4 Series Smart TV 4K Processor Flat Screen",
+      "description": "SELF-LIT PIXELS: LG's signature OLED technology creates an incredible watching experience and stellar picture quality illuminated with over 8 million self-lit pixels. Take in rich and accurate colors from the brightest to darkest parts of the scene thanks to 100% Color Volume* and with 100% Color Fidelity.",
       "price": 1500,
-      "category_ids": ["C015","C008"]
+      "images": [
+        "https://m.media-amazon.com/images/I/81XMzlM2LTL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71Q2oC5cizL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71V34ghPhLL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71qt9lSVgRL._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "TVs"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P037",
-      "name": "Sony Bravia 4K TV",
-      "description": "High-definition TV with smart features.",
+      "id": "67eec6ec9b15201e7427d804",
+      "productName": "Sony BRAVIA FW-32BZ30J 32\" 4K Ultra HD HDR VA LED Professional",
+      "description": "32 IN LED, 4K HDR, PROFESSIONAL DISPLAY: The BRAVIA FW-32BZ30J 32\" 4K Ultra HD HDR VA LED Professional Display is designed for a wide range of professional applications, including retail, corporate, and education. It features a sleek design and advanced technology to deliver stunning visuals and exceptional performance.",
       "price": 1200,
-      "category_ids": ["C015","C008"]
+      "images": ["https://m.media-amazon.com/images/I/51IpPUNKagL._AC_.jpg"],
+      "categories": ["Electronics", "TVs"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P038",
-      "name": "Dell UltraSharp Monitor",
-      "description": "High-resolution monitor for professional use.",
+      "id": "67eec6ed9b15201e7427d805",
+      "productName": "Dell UltraSharp 34 Monitor - U3425WE",
+      "description": "Dell UltraSharp U3425WE 34\" Class UW-QHD Curved Screen LED Monitor - 21:9 - Black, Silver",
       "price": 800,
-      "category_ids": ["C015","C009"]
+      "images": [
+        "https://m.media-amazon.com/images/I/61pvKhr+T1L._AC_SL1280_.jpg",
+        "https://m.media-amazon.com/images/I/41CbNyszxAL._AC_SL1280_.jpg",
+        "https://m.media-amazon.com/images/I/51WC+mv2RBL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51rpDUn8dXL._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Monitors"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P039",
-      "name": "LG UltraWide Monitor",
-      "description": "Wide monitor for multitasking and gaming.",
+      "id": "67eec6ee9b15201e7427d806",
+      "productName": "LG UltraWide FHD 29-Inch Computer Monitor 29WQ600-W",
+      "description": "A wider workspace for productivity and play\u00e2\u20ac\u201dat 29 inches and 21:9 screen ratio, this wide Full HD IPS Display features realistic, accurate color, contrast, clarity and detail at wide angles. Content creation. Gaming. Designing. Video editing. Whatever the task, our LG Ultra Wide Monitor unveils a panoramic view and high-performance features to push productivity to new levels. FreeSync is available when connected via HDMI or DisplayPort with a compatible video card. Game modes for FPS games and even an RTS preset mode allow you to choose the best conditions for your gameplay. Stay in the game as you take fast, easy control of essential monitor settings including picture, audio and Screen Split with just a few clicks of your mouse with On-Screen Control*. Reader Mode provides optimal conditions for comfortable reading with the a click of a mouse. *Software download required to enable OnScreen Control. For download details, visit LGUSA.com/OnScreenControlSupport.",
       "price": 600,
-      "category_ids": ["C015","C009"]
+      "images": [
+        "https://m.media-amazon.com/images/I/61ajPU8CMJL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/41qGKh2+p0L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61AYGVp+P9L._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Monitors"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P040",
-      "name": "Logitech MX Master Mouse",
-      "description": "Ergonomic mouse with advanced features.",
+      "id": "67eec6ef9b15201e7427d807",
+      "productName": "Logitech MX Master 2S Wireless Mouse",
+      "description": "Cross computer control: Game changing capacity to navigate seamlessly on 3 computers, and copy paste text, images, and files from 1 to the other using Logitech flow",
       "price": 100,
-      "category_ids": ["C015","C010"]
+      "images": [
+        "https://m.media-amazon.com/images/I/61v1eEAWXYL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61YezbdDf5L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61fAH0XvI7L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71Wm+JD3TYL._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Accessories"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P041",
-      "name": "Razer Gaming Mouse",
-      "description": "High-performance gaming mouse with customizable buttons.",
+      "id": "67eec6f09b15201e7427d808",
+      "productName": "Razer Basilisk V3 Customizable Ergonomic Gaming Mouse",
+      "description": "ICONIC ERGONOMIC DESIGN WITH THUMB REST \u00e2\u20ac\u201d PC gaming mouse favored by millions worldwide with a form factor that perfectly supports the hand while its buttons are optimally positioned for quick and easy access.Create, control, and champion your playstyle with the new Razer Basilisk V3\u00e2\u20ac\u201dthe quintessential ergonomic gaming mouse for customized performance. With 10+1 programmable buttons, a dual-mode tilt scroll wheel, and a heavy dose of Razer Chroma RGB, it's time to light up the competition your way.",
       "price": 80,
-      "category_ids": ["C015","C010"]
+      "images": [
+        "https://m.media-amazon.com/images/I/61AcT0ZuO3L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71ogW8jLA+L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/510qfo6EBqL._AC_SL1124_.jpg",
+        "https://m.media-amazon.com/images/I/61Y-Zb0WVtL._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Accessories"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P042",
-      "name": "Corsair Gaming Keyboard",
-      "description": "Mechanical keyboard with customizable RGB lighting.",
+      "id": "67eec6f19b15201e7427d809",
+      "productName": "Razer BlackWidow V4 Pro Wired Mechanical Gaming Keyboard",
+      "description": "Empower your play with a centerpiece that elevates your entire setup. Enter the next phase of battlestation evolution with the ultimate mechanical gaming keyboard. Take full command with a set of features designed for advanced control, and enhance your immersion with full-blown Razer Chroma RGB.",
       "price": 150,
-      "category_ids": ["C015", "C010"]
+      "images": [
+        "https://m.media-amazon.com/images/I/819MTNF5BPL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/81W4hslvStL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/91jKHaUyc-L._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Accessories"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P043",
-      "name": "Samsung Galaxy Buds Pro",
-      "description": "Wireless earbuds with active noise cancellation.",
+      "id": "67eec6f29b15201e7427d80a",
+      "productName": "Samsung Galaxy Buds Pro True Wireless Noise Cancelling Earbuds",
+      "description": "PRODUCT OVERVIEWSamsung Galaxy Buds Pro combines crystal-clear sound with unprecedented control, making it effortless to elevate everyday moments. Use intelligent Active Noise Cancellation to escape into your music at a moment\u00e2\u20ac\u2122s notice, even in a noisy crowd. Close the distance with crystal-clear calls, so it always feels like you\u00e2\u20ac\u2122re in the same room. And water won\u00e2\u20ac\u2122t ruin your workout since the resistant Galaxy Buds Pro keeps the beat going even with a little rain. Pair your Galaxy Buds Pro with a Galaxy S21 and find even more ways to make ordinary extraordinary.KEY FEATURESQuiet the world with just a tap - Escape and tune in to your own moment of Zen \u00e2\u20ac\u201d all with a single tap. Your Galaxy Buds Pro puts intelligent Active Noise Cancellation at your fingertips.\u00c2\u00b9Soak up every note with premium sound - Relive the memories of every beat of your favorite song with an 11- mm woofer and 6.5-mm tweeter built into every earbud.Water resistant so workouts don\u00e2\u20ac\u2122t need to stop - Water won\u00e2\u20ac\u2122t ruin your workout. Your IPX7 water-resistant Galaxy Buds Pro can keep the beat going even with a little rain.\u00c2\u00b2Crystal-clear conversation - With Galaxy Buds Pro, you\u00e2\u20ac\u2122ll feel confident you\u00e2\u20ac\u2122re connected and heard. No matter where you are, stay connected whether you\u00e2\u20ac\u2122re owning that virtual meeting or catching up with an old friend.",
       "price": 200,
-      "category_ids": ["C015", "C010", "C003"]
+      "images": [
+        "https://m.media-amazon.com/images/I/51tjYpB29DS._AC_SL1000_.jpg",
+        "https://m.media-amazon.com/images/I/41LTq51fQJS._AC_SL1000_.jpg",
+        "https://m.media-amazon.com/images/I/61GMVUeopuS._AC_SL1000_.jpg",
+        "https://m.media-amazon.com/images/I/51dvhrTXsqS._AC_SL1000_.jpg"
+      ],
+      "categories": ["Electronics", "Accessories", "Headphones"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P044",
-      "name": "JBL Flip 5 Speaker",
-      "description": "Portable Bluetooth speaker with great sound quality.",
+      "id": "67eec6f39b15201e7427d80b",
+      "productName": "JBL FLIP 5 Portable Wireless Bluetooth Speaker",
+      "description": "JBL FLIP 5 Portable Wireless Bluetooth Speaker IPX7 Waterproof On-The-Go Bundle with Boomph Hardshell Protective Case - Red",
       "price": 120,
-      "category_ids": ["C015", "C010"]
+      "images": [
+        "https://m.media-amazon.com/images/I/71iXCorg+ML._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71fPqM85RKL._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Accessories"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P045",
-      "name": "Canon EOS R5 Camera",
-      "description": "High-resolution mirrorless camera for professional photography.",
+      "id": "67eec6f39b15201e7427d80c",
+      "productName": "Canon EOS R5 Mirrorless Camera",
+      "description": "High Image Quality: Canon EOS R5 8K digital camera features a stacked, back-side illuminated 45-megapixel full-frame CMOS sensor for phenomenal low-light performance, image clarity and level of detail",
       "price": 4000,
-      "category_ids": ["C015", "C007"]
+      "images": [
+        "https://m.media-amazon.com/images/I/71hpUUcC5uL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71kHYhqWyHL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61oKv82ix1L._AC_SL1500_.jpg"
+      ],
+      "categories": ["Electronics", "Cameras"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P046",
-      "name": "Nikon Z6 II Camera",
-      "description": "Versatile mirrorless camera with great low-light performance.",
+      "id": "67eec6f49b15201e7427d80d",
+      "productName": "Nikon Z6 II Camera",
+      "description": "'Do it all with this versatile full frame mirrorless hybrid that excels in speed, image quality and video performance. Everything a hybrid still and video mirrorless camera is meant to be. High-speed shooting with the buffer capacity to match. 4K Ultra HD video at 60p. 273-point Hybrid AF system with more options. Outstanding low-light capabilities. Dual processors. Dual card slots. Wireless connectivity with smartphones and laptops. Tons of creative features and that\u00e2\u20ac\u2122s just the beginning.",
       "price": 2500,
-      "category_ids": ["C015", "C007"]
+      "images": [
+        "https://m.media-amazon.com/images/I/61kajF4fH5L._AC_SL1000_.jpg",
+        "https://m.media-amazon.com/images/I/61d6+iw1imL._AC_SL1000_.jpg",
+        "https://m.media-amazon.com/images/I/71u0lM0qL7L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/51N+8Rpo6yL._AC_SL1000_.jpg"
+      ],
+      "categories": ["Electronics", "Cameras"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     },
     {
-      "product_id": "P047",
-      "name": "Sony A7 III Camera",
+      "id": "67eec6f59b15201e7427d80e",
+      "productName": "Sony A7 III Camera",
       "description": "Full-frame mirrorless camera with fast autofocus.",
-      "price": 3000,
-      "category_ids": ["C015", "C007"]
-    },
-    {
-      "product_id": "P048",
-      "name": "Fujifilm X-T4 Camera",
-      "description": "Compact mirrorless camera with great color reproduction.",
-      "price": 1800,
-      "category_ids": ["C015", "C007"]
+      "price": 1998,
+      "images": [
+        "https://m.media-amazon.com/images/I/517CEyCXIHL._AC_SL1000_.jpg",
+        "https://m.media-amazon.com/images/I/519CXmlsweL._AC_SL1000_.jpg",
+        "https://m.media-amazon.com/images/I/61MiK+gVl4L._AC_SL1000_.jpg"
+      ],
+      "categories": ["Electronics", "Cameras"],
+      "supplierCode": "",
+      "productInventoryId": 0,
+      "createdDate": "0001-01-01T00:00:00Z",
+      "updatedDate": "0001-01-01T00:00:00Z",
+      "active": true
     }
   ],
   "orders": [
-    { "order_id": "2", "user_id": "U001", "products": ["P005", "P011"] },
-    { "order_id": "7", "user_id": "U001", "products": ["P003", "P014"] },
-    { "order_id": "3", "user_id": "U002", "products": ["P010", "P007"] },
-    { "order_id": "4", "user_id": "U002", "products": ["P006", "P024"] },
-    { "order_id": "5", "user_id": "U003", "products": ["P012", "P016"] },
-    { "order_id": "6", "user_id": "U003", "products": ["P002", "P017"] },
-    { "order_id": "8", "user_id": "U004", "products": ["P004", "P018"] },
-    { "order_id": "9", "user_id": "U001", "products": ["P032", "P033"] },
-    { "order_id": "10", "user_id": "U002", "products": ["P030"] },
+    { "order_id": "2", "user_id": "U001", "products": ["67eec6cb9b15201e7427d7e0", "67eec6cd9b15201e7427d7e2"] },
+    { "order_id": "7", "user_id": "U001", "products": ["67eec6ce9b15201e7427d7e3", "67eec6cf9b15201e7427d7e4"] },
+    { "order_id": "3", "user_id": "U002", "products": ["67eec6d29b15201e7427d7e7", "67eec6d39b15201e7427d7e8"] },
+    { "order_id": "4", "user_id": "U002", "products": ["67eec6d39b15201e7427d7e8", "67eec6d39b15201e7427d7e9"] },
+    { "order_id": "5", "user_id": "U003", "products": ["67eec6d59b15201e7427d7eb", "67eec6d69b15201e7427d7ec"] },
+    { "order_id": "6", "user_id": "U003", "products": ["67eec6d79b15201e7427d7ed", "67eec6d89b15201e7427d7ee"] },
+    { "order_id": "8", "user_id": "U004", "products": ["67eec6d99b15201e7427d7ef", "67eec6da9b15201e7427d7f0"] },
+    { "order_id": "9", "user_id": "U001", "products": ["67eec6da9b15201e7427d7f0", "67eec6db9b15201e7427d7f1"] },
+    { "order_id": "10", "user_id": "U002", "products": ["67eec6d99b15201e7427d7ef"] },
     {
       "order_id": "10",
       "user_id": "U003",
-      "products": ["P028", "P026", "P027"]
+      "products": ["67eec6dc9b15201e7427d7f2", "67eec6dd9b15201e7427d7f3", "67eec6de9b15201e7427d7f4"]
     },
-    { "order_id": "11", "user_id": "U004", "products": ["P023"] },
-    { "order_id": "12", "user_id": "U005", "products": ["P022", "P021"] },
-    { "order_id": "13", "user_id": "U001", "products": ["P020", "P019"] },
-    { "order_id": "14", "user_id": "U002", "products": ["P015", "P008"] },
+    { "order_id": "11", "user_id": "U004", "products": ["67eec6de9b15201e7427d7f4"] },
+    { "order_id": "12", "user_id": "U005", "products": ["67eec6de9b15201e7427d7f5", "67eec6e89b15201e7427d7ff"] },
+    { "order_id": "13", "user_id": "U001", "products": ["67eec6e79b15201e7427d7fe", "67eec6e89b15201e7427d800"] },
+    { "order_id": "14", "user_id": "U002", "products": ["67eec6e69b15201e7427d7fd", "67eec6e59b15201e7427d7fc"] },
     {
       "order_id": "15",
       "user_id": "U003",
-      "products": ["P009", "P001", "P039"]
+      "products": ["67eec6cf9b15201e7427d7e4", "67eec6d69b15201e7427d7ec", "67eec6e29b15201e7427d7f9"]
     },
-    { "order_id": "16", "user_id": "U004", "products": ["P012", "P013"] },
-    { "order_id": "17", "user_id": "U005", "products": ["P029", "P031"] },
-    { "order_id": "18", "user_id": "U001", "products": ["P036", "P037"] },
-    { "order_id": "19", "user_id": "U002", "products": ["P038", "P039"] },
-    { "order_id": "20", "user_id": "U003", "products": ["P040", "P041"] },
+    { "order_id": "16", "user_id": "U004", "products": ["67eec6e69b15201e7427d7fd", "67eec6e59b15201e7427d7fc"] },
+    { "order_id": "17", "user_id": "U005", "products": ["67eec6e09b15201e7427d7f7", "67eec6e09b15201e7427d7f6"] },
+    { "order_id": "18", "user_id": "U001", "products": ["67eec6e49b15201e7427d7fb", "67eec6e39b15201e7427d7fa"] },
+    { "order_id": "19", "user_id": "U002", "products": ["67eec6e29b15201e7427d7f9", "67eec6e19b15201e7427d7f8"] },
+    { "order_id": "20", "user_id": "U003", "products": ["67eec6de9b15201e7427d7f5", "67eec6e09b15201e7427d7f6"] },
     {
       "order_id": "21",
       "user_id": "U004",
-      "products": ["P042", "P043", "P001", "P002"]
+      "products": ["67eec6de9b15201e7427d7f5", "67eec6e09b15201e7427d7f7", "67eec6eb9b15201e7427d802", "67eec6eb9b15201e7427d803"]
     },
     {
       "order_id": "22",
       "user_id": "U005",
-      "products": ["P044", "P032", "P023", "P027"]
+      "products": ["67eec6e99b15201e7427d801", "67eec6f19b15201e7427d809", "67eec6ee9b15201e7427d806", "67eec6ef9b15201e7427d807"]
     },
-    { "order_id": "23", "user_id": "U001", "products": ["P045"] },
-    { "order_id": "24", "user_id": "U002", "products": ["P046"] },
-    { "order_id": "25", "user_id": "U003", "products": ["P047"] },
-    { "order_id": "26", "user_id": "U004", "products": ["P048"] }
+    { "order_id": "23", "user_id": "U001", "products": ["67eec6f29b15201e7427d80a", "67eec6f39b15201e7427d80b"] },
+    { "order_id": "24", "user_id": "U002", "products": ["67eec6eb9b15201e7427d803"] },
+    { "order_id": "25", "user_id": "U003", "products": ["67eec6ec9b15201e7427d804"] },
+    { "order_id": "26", "user_id": "U004", "products": ["67eec6f39b15201e7427d80c"] }
   ]
 }

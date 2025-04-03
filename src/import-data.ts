@@ -7,6 +7,7 @@ dotenv.config();
 // Load JSON data
 const data = JSON.parse(fs.readFileSync('data/data.json', 'utf-8'));
 
+
 // Connect to Neo4j database
 const driver = neo4j.driver(
     process.env.NEO4J_URI as string,
@@ -21,7 +22,7 @@ async function importData() {
         // Import Categories
         for (const category of data.categories) {
             await session.run(
-                `MERGE (c:Category {category_id: $category_id}) SET c.name = $name`,
+                `MERGE (c:Category {category_id: $id}) SET c.categoryName = $categoryName`,
                 category
             );
         }
@@ -29,17 +30,17 @@ async function importData() {
         // Import Products
         for (const product of data.products) {
         await session.run(
-            `MERGE (p:Product {product_id: $product_id})
-                SET p.name = $name, p.description = $description, p.price = $price`,
+            `MERGE (p:Product {product_id: $id})
+                SET p.productName = $productName, p.description = $description, p.price = $price, p.images = $images`,
             product
         );
 
         // Link products to categories
-        for (const categoryId of product.category_ids) {
+        for (const categoryName of product.categories) {
             await session.run(
-                `MATCH (p:Product {product_id: $product_id}), (c:Category {category_id: $category_id})
+                `MATCH (p:Product {product_id: $product_id}), (c:Category {categoryName: $categoryName})
                     MERGE (p)-[:BELONGS_TO]->(c)`,
-                { product_id: product.product_id, category_id: categoryId }
+                { product_id: product.id, categoryName: categoryName }
             );
         }
     }

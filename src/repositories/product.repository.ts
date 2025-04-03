@@ -9,6 +9,16 @@ export class ProductRepository {
 
     }
 
+    private static transformProductModel(properties: any): ProductModel {
+       return new ProductModel({
+            id: properties.product_id,
+            productName: properties.productName,
+            description: properties.description,
+            price: properties.price,
+            images: properties.images
+        })
+    }
+
     static async getAllProducts() {
         const query = `
             MATCH (p:Product)-[:BELONGS_TO]->(c:Category)
@@ -19,15 +29,10 @@ export class ProductRepository {
             const product = record.get("p")
             const category = record.get("c")
             return {
-                product: new ProductModel({
-                    id: product.properties.product_id,
-                    name: product.properties.name,
-                    description: product.properties.description,
-                    price: product.properties.price,
-                }),
+                product: ProductRepository.transformProductModel(product.properties),
                 category: new ProductCategoryModel({
                     id: category.properties.category_id,
-                    name: category.properties.name,
+                    categoryName: category.properties.name,
                 })
             }
         });
@@ -43,16 +48,11 @@ export class ProductRepository {
             const product = record.get("p")
             const categories = record.get("categories")
             return {
-                product: new ProductModel({
-                    id: product.properties.product_id,
-                    name: product.properties.name,
-                    description: product.properties.description,
-                    price: product.properties.price,
-                }),
+                product: ProductRepository.transformProductModel(product.properties),
                 categories: categories.map((category: any) => {
                     return new ProductCategoryModel({
                         id: category.properties.category_id,
-                        name: category.properties.name,
+                        categoryName: category.properties.name,
                         description: category.properties.description,
                     })
                 })
@@ -98,52 +98,57 @@ export class ProductRepository {
         const result = await RunQuery(query, { userId });
         return result?.records.map((record) => {
             const product = record.get("recommendedProduct")
-            return new ProductModel({
-                id: product.properties.product_id,
-                name: product.properties.name,
-                description: product.properties.description,
-                price: product.properties.price,
-            })
+            return ProductRepository.transformProductModel(product.properties)
         });
     }
 
 
-    static async getRecommendationByProductId(productId: string) {
+    static async getRecommendationByProductId(productId: string): Promise<{ product: ProductModel; categories: ProductCategoryModel[]; }[]> {
         const query =
         `
             MATCH (p:Product {product_id: $productId})-[:BELONGS_TO]->(c:Category)
-            
-            // Find frequently co-purchased products
-            OPTIONAL MATCH (:User)-[:ORDERED]->(:Order)-[:CONTAINS]->(p)
-            MATCH (:User)-[:ORDERED]->(:Order)-[:CONTAINS]->(coPurchased:Product)
-            WHERE coPurchased <> p
-            WITH COLLECT(DISTINCT coPurchased) AS coPurchaseRecommendations, c, p
 
             // Find category-based recommendations
             OPTIONAL MATCH (recommended:Product)-[:BELONGS_TO]->(c)
             WHERE recommended <> p
-            WITH coPurchaseRecommendations, COLLECT(DISTINCT recommended) AS categoryRecommendations
+            WITH COLLECT(DISTINCT recommended) AS categoryRecommendations, p, c
 
-            // Combine the two lists, placing category recommendations first
-            WITH REDUCE(output = [], r IN categoryRecommendations | output + r) +
-                REDUCE(output = [], r IN coPurchaseRecommendations | output + r) AS allRecommendations
+            // Find frequently co-purchased products
+            OPTIONAL MATCH (:User)-[:ORDERED]->(:Order)-[:CONTAINS]->(p)
+            MATCH (:User)-[:ORDERED]->(:Order)-[:CONTAINS]->(coPurchased:Product)
+            WHERE coPurchased <> p
+            WITH categoryRecommendations, COLLECT(DISTINCT coPurchased) AS coPurchaseRecommendations, c
+
+            // Assign weights: Category products get priority by repeating them
+            WITH categoryRecommendations + categoryRecommendations AS boostedCategoryRecommendations, coPurchaseRecommendations, c
+
+            // Merge both lists, ensuring category-based appear first
+            WITH boostedCategoryRecommendations + coPurchaseRecommendations AS allRecommendations, c
 
             UNWIND allRecommendations AS recommendedProduct
 
+            // Retrieve the categories for each recommended product
+            OPTIONAL MATCH (recommendedProduct)-[:BELONGS_TO]->(recCategory:Category)
+
             // Rank by frequency of occurrence
-            RETURN DISTINCT recommendedProduct, COUNT(*) AS score
+            RETURN DISTINCT recommendedProduct, COLLECT(DISTINCT recCategory) AS categories, COUNT(*) AS score
             ORDER BY score DESC
             LIMIT 10;
         `
         const result = await RunQuery(query, { productId });
         return result?.records.map((record) => {
             const product = record.get("recommendedProduct")
-            return new ProductModel({
-                id: product.properties.product_id,
-                name: product.properties.name,
-                description: product.properties.description,
-                price: product.properties.price,
-            })
+            const categories = record.get("categories")
+            return {
+                product: ProductRepository.transformProductModel(product.properties),
+                categories: categories.map((category: any) => {
+                    return new ProductCategoryModel({
+                        id: category.properties.category_id,
+                        categoryName: category.properties.categoryName,
+                        description: category.properties.description,
+                    })
+                })
+            }
         });
     }
 
@@ -159,18 +164,13 @@ export class ProductRepository {
         `
         const result = await RunQuery(query, {
             productId: product.id,
-            name: product.name,
+            productName: product.productName,
             description: product.description,
             price: product.price
         });
         return result?.records.map((record) => {
             const product = record.get("p")
-            return new ProductModel({
-                id: product.properties.product_id,
-                name: product.properties.name,
-                description: product.properties.description,
-                price: product.properties.price,
-            })
+            return ProductRepository.transformProductModel(product.properties)
         });
     }
 }

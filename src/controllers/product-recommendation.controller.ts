@@ -45,7 +45,15 @@ export class ProductRecommendationController {
       throw new BadRequestError("Product ID is required");
     }
     const recommendations = await ProductRepository.getRecommendationByProductId(productId);
-    return { recommendations }
+
+    return {
+      recommendations: recommendations.map(p => {
+        return {
+          ...p.product,
+          categories: p.categories.map(c => c.categoryName)
+        }
+      })
+    }
   })
 
   public getRecommendationByUserId = APIRequest(async (req: Request, res: Response, next: NextFunction) => {

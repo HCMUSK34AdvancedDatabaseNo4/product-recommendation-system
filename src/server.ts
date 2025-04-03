@@ -34,4 +34,5 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs as JsonObject)
 // Start Server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Swagger running on http://localhost:${PORT}/api-docs`);
 });
